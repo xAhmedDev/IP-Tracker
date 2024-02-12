@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <title>Frontend Mentor | IP Address Tracker</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content-bg">
+        <div class="content">
+          <div class="title">
+            <p>IP Address Tracker</p>
+          </div>
+          <form class="input-div">
+            <input
+              class="ip-input"
+              type="text"
+              placeholder="Search for any IP address or domain"
+              pattern="^((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)\.?\b){4}$"
+            />
+            <button class="get-info">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
+                <path
+                  fill="none"
+                  stroke="#FFF"
+                  stroke-width="3"
+                  d="M2 1l6 6-6 6"
+                />
+              </svg>
+            </button>
+          </form>
+          <div class="ip-info">
+            <div class="ip-addrees card">
+              <span>IP Address</span>
+              <p class="ip-p"></p>
+            </div>
+            <div class="location card">
+              <span>Location</span>
+              <p class="location-p"></p>
+            </div>
+            <div class="timezone card">
+              <span>Timezone</span>
+              <p class="timezone-p"></p>
+            </div>
+            <div class="isp card">
+              <span>isp</span>
+              <p class="isp-p"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
